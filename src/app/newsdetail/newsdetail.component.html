@@ -1,0 +1,10 @@
+<h5>{{n.title}}</h5>
+<hr>
+<div class="row">
+  <p class="font-weight-light">作者：{{n.author}}</p>
+  <p class="font-weight-light">发布时间：{{n.pbdate | date:"yyyy--MM--dd"}}</p>
+</div>
+<hr>
+<div [innerHTML]="n.content | tohtml">
+  <!--新闻正文-->
+</div>

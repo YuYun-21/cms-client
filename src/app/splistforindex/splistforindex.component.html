@@ -1,0 +1,51 @@
+<!--<div class="row">
+  <div class="col-md-3">
+    <div class="card">
+      <img src="/assets/images/sp200.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">卡片标题</h5>
+        <p class="card-text">卡片内容描述</p>
+        <a routerLink="spdetail" class="btn btn-primary">查看详情</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="card">
+    <img src="/assets/images/sd.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">湿地风光</h5>
+      <p class="card-text">古滇精品湿地与“滇海古渡大码头”、“长腰山风景区”、“七彩云南·欢乐世界”等，共同构筑了滇池南岸山水生态风景线。</p>
+      <a routerLink="spdetail" class="btn btn-primary ">查看详情</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/assets/images/as.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">樱花谷</h5>
+      <p class="card-text">云南重瓣樱花不仅色泽艳丽、花期长，还是日本樱花的源头。</p>
+      <a routerLink="spdetail1" class="btn btn-primary">查看详情</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/assets/images/fd.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">七彩云南</h5>
+      <p class="card-text">七彩云南品牌之路</p>
+      <a routerLink="spdetail2" class="btn btn-primary">查看详情</a>
+    </div>
+  </div>
+
+</div>
+-->
+<div class="card-group">
+  <div class="card"  *ngFor="let s of sl">
+    <img src="{{s.cover}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{s.title}}</h5>
+      <p class="card-text">{{s.description}}</p>
+      <a class="btn btn-primary " (click)="goToDetail(s.singlepageid)">查看详情</a>
+    </div>
+  </div>
+</div>

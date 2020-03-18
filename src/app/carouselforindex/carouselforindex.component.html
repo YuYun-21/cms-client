@@ -1,0 +1,68 @@
+<ngb-carousel>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="cl[0].picurl" class="img-thumbnail" (click)="onCarouselClick(cl[0].contenturl)" alt="Random first slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>{{cl[0].title}}</h3>
+      <p>{{cl[0].description}}</p>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="cl[1].picurl" class="img-thumbnail" (click)="onCarouselClick(cl[1].contenturl)" alt="Random first slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>{{cl[1].title}}</h3>
+      <p>{{cl[1].description}}</p>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="cl[2].picurl" class="img-thumbnail" (click)="onCarouselClick(cl[2].contenturl)" alt="Random first slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>{{cl[2].title}}</h3>
+      <p>{{cl[2].description}}</p>
+    </div>
+  </ng-template>
+
+</ngb-carousel>
+  <!--<ng-template ngbSlide>-->
+    <!--<div class="picsum-img-wrapper">-->
+      <!--<img [src]="images[1]" class="img-thumbnail" alt="Random second slide">-->
+    <!--</div>-->
+    <!--<div class="carousel-caption">-->
+  <!--<h3>寥廓山森林公园天然氧吧</h3>-->
+  <!--<p>登山凭栏远眺，山川江河尽收眼底</p>-->
+  <!--<p>修竹幽幽，山花烂漫，园内绿草如茵，梅兰争艳</p>-->
+      <!--<h3>普者黑</h3>-->
+      <!--<p>国家AAAA级旅游景区</p>-->
+      <!--<p>以“水上田园、湖泊峰林、彝家水乡、岩溶湿地、荷花世界、候鸟天堂”六大景观而著称。</p>-->
+    <!--</div>-->
+  <!--</ng-template>-->
+
+  <!--<ng-template ngbSlide>-->
+    <!--<div class="picsum-img-wrapper">-->
+      <!--<img [src]="images[2]" class="img-thumbnail" alt="Random third slide">&lt;!&ndash;img-fluid&ndash;&gt;-->
+    <!--</div>-->
+    <!--<div class="carousel-caption">-->
+      <!--<h3>元阳梯田</h3>-->
+      <!--<p>规模宏大，气势磅礴。</p>-->
+    <!--</div>-->
+  <!--</ng-template>-->
+
+  <!--<ng-template ngbSlide>-->
+    <!--<div class="picsum-img-wrapper">-->
+      <!--<img [src]="images[3]" class="img-thumbnail" alt="Random third slide">&lt;!&ndash;img-fluid&ndash;&gt;-->
+    <!--</div>-->
+    <!--<div class="carousel-caption">-->
+      <!--<h3>西双版纳</h3>-->
+      <!--<p>惊艳火烧云晚霞美景，火烧云连绵不绝，呈现惊艳视觉画面，美如仙境。</p>-->
+    <!--</div>-->
+  <!--</ng-template>-->
+
+
+
