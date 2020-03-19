@@ -11,5 +11,5 @@ export class ConfigService {
   // public WEBHOST="http://cms.heyunhui.top:8080";
 
   public HOST="http://localhost:8080";
-  public WEBHOST="http://localhost:8080";
+  public WEBHOST="http://localhost:4200";
 }

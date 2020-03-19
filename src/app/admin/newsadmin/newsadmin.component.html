@@ -8,7 +8,7 @@
     <th scope="col">标题</th>
     <th scope="col">作者</th>
     <th scope="col">发布时间</th>
-    <!--<td scope="col">内容</td>-->
+    <td scope="col">内容</td>
     <td>操作</td>
   </tr>
   </thead>
@@ -18,7 +18,7 @@
     <td>{{n.title}}</td>
     <td>{{n.author}}</td>
     <td>{{n.pbdate | date:'yyyy-MM-dd HH:mm'}}</td>
-    <!--<td>{{n.content}}</td>-->
+    <td>{{n.content}}</td>
     <td>
       <button class="btn btn-success" (click)="updateNews(n.newsid)">修改</button>
       <button class="btn btn-danger" (click)="deleteNews(n.newsid)" >删除</button>

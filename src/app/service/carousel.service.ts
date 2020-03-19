@@ -14,4 +14,18 @@ export class CarouselService {
   getCarouselList(){
     return this.http.get(this.getCarouselListUrl).toPromise();
   }
+
+  private getCarouselListMapUrl=this.config.HOST+"/public/getCarouselListMap";
+  getCarouseListMap(){
+    return this.http.get(this.getCarouselListMapUrl).toPromise();
+  }
+
+  private uplaodPicUrl=this.config.HOST+"/manage/uploadPic";
+  uploadPic(file:string){
+
+    const uploadData = new FormData();
+    uploadData.append('uploadfile', file);
+    return this.http.post(this.uplaodPicUrl,uploadData).toPromise();
+
+  }
 }

@@ -1,4 +1,4 @@
-<ngb-carousel>
+<ngb-carousel *ngIf="cl.length>0">
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper">
       <img [src]="cl[0].picurl" class="img-thumbnail" (click)="onCarouselClick(cl[0].contenturl)" alt="Random first slide">

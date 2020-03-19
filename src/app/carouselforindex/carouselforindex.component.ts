@@ -10,7 +10,7 @@ import {ConfigService} from "../service/config.service";
 })
 export class CarouselforindexComponent implements OnInit {
 
-  //images:Array<string>;
+
   cl:Array<Carousel>;
 
   constructor(private carouselservice:CarouselService
@@ -21,12 +21,6 @@ export class CarouselforindexComponent implements OnInit {
 
   ngOnInit() {
     this.getCarouselList();
-
-    /*this.images=new Array();
-    this.images.push('/assets/images/4.jpg');
-    this.images.push('/assets/images/1.png');
-    this.images.push('/assets/images/2.png');
-    this.images.push('/assets/images/3.png');*/
 
   }
 
@@ -45,22 +39,22 @@ export class CarouselforindexComponent implements OnInit {
           "carouselid": "1",
           "title": "标题1",
           "description": "描述1",
-          "picurl": "http://cms.heyunhui.top/assets/images/carselist/4.jpg",
+          "picurl": "http://cms.heyunhui.top/assets/images/4.jpg",
           "contenturl": "newsdetail;newsid=1"
         },
         {
           "carouselid": "2",
           "title": "标题2",
           "description": "描述2",
-          "picurl": "http://cms.heyunhui.top/assets/images/carselist/5.jpg",
+          "picurl": "http://cms.heyunhui.top/assets/images/5.jpg",
           "contenturl": "newsdetail;newsid=2"
         },
         {
           "carouselid": "3",
           "title": "标题3",
           "description": "描述3",
-          "picurl": "http://cms.heyunhui.top/assets/images/carselist/6.jpg",
-          "contenturl": "newsdetail;newsid=2"
+          "picurl": "http://cms.heyunhui.top/assets/images/6.jpg",
+          "contenturl": "newsdetail;newsid=3"
         }
       ];
   }
