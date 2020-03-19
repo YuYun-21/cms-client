@@ -40,21 +40,21 @@ export class CarouselforindexComponent implements OnInit {
           "title": "标题1",
           "description": "描述1",
           "picurl": "http://cms.heyunhui.top/assets/images/4.jpg",
-          "contenturl": "newsdetail;newsid=1"
+          "contenturl": "/newsdetail;newsid=1"
         },
         {
           "carouselid": "2",
           "title": "标题2",
           "description": "描述2",
           "picurl": "http://cms.heyunhui.top/assets/images/5.jpg",
-          "contenturl": "newsdetail;newsid=2"
+          "contenturl": "/newsdetail;newsid=2"
         },
         {
           "carouselid": "3",
           "title": "标题3",
           "description": "描述3",
           "picurl": "http://cms.heyunhui.top/assets/images/6.jpg",
-          "contenturl": "newsdetail;newsid=3"
+          "contenturl": "/newsdetail;newsid=3"
         }
       ];
   }
